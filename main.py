@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-
+#Code to recieve recipes from the website.
 res = requests.get("https://www.allrecipes.com/recipe/235850/starbucks-caramel-frappuccino-copycat-recipe/")
 soup = BeautifulSoup(res.text, 'html.parser')
 #The specific ingredients we want.
